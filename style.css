@@ -1,0 +1,32 @@
+body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+}
+.content{
+    width: 600px;
+    background-color: rgb(249, 223, 228);
+    padding: 20px;
+    margin: 100px auto;
+}
+.ques{
+    padding: 0px 40px 10px;
+}
+.option{
+    margin: 40px 40px;
+}
+.option div{
+    background-color: white;
+    padding: 10px 10px 10px 0;
+}
+.option span{
+    background-color: rgb(244, 79, 134);
+    padding: 10px 20px;
+    color: aliceblue;
+    margin: 10px 10px 0px 0;
+}
+.wrong:hover, .correct:hover{
+    /* background-color: rgb(249, 223, 228); */
+    cursor: pointer;
+}

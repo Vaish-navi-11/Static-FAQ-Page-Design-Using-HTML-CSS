@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose the correct answer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="ques">
+            <h2>In web design, what does CSS stand for?</h2>
+        </div>
+        <div class="option">
+            <div class="wrong"><span>A</span> Counter Strike Source</div>
+        </div>
+        <div class="option">
+            <div class="wrong"><span>B</span> Corrective Style Sheet</div>
+        </div>
+        <div class="option">
+            <div class="wrong"><span>C</span> Computer Style Sheet</div>
+        </div>
+        <div class="option">
+            <div class="correct"><span>D</span> Cascading Style Sheet</div>
+        </div>
+        <script>
+            var wrong = document.querySelectorAll(".wrong");
+            for (var i = 0; i < wrong.length; i++) {
+                wrong[i].addEventListener('click', function() {
+                    this.style.backgroundColor = "red";
+                    this.querySelector('span').style.backgroundColor = "red";
+                    this.querySelector('span').style.color="black";
+                    this.querySelector('div').style.backgroundColor = "red";
+                });
+            }
+
+            var correct = document.querySelector(".correct");
+            correct.addEventListener('click', function() {
+                this.style.backgroundColor = "green";
+                this.querySelector('span').style.backgroundColor = "green";
+                this.querySelector('span').style.color="black";
+                this.querySelector('div').style.backgroundColor = "green";
+            });
+        </script>
+    </div>
+</body>
+</html>
